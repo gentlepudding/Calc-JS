@@ -9,18 +9,19 @@
     margin: 100px auto;
 }
 
-.field {
+.form-wrap {
     width: inherit;
     background: whitesmoke;
     padding: 10px 10px;
 }
 
-.entry-field {
+.form {
     width: 245px;
     padding: 10px 5px;
 }
 
-.button {
+.button,
+.button-digit {
     border: 1px solid whitesmoke;
     background: skyblue;
     width: 70px;
@@ -28,7 +29,22 @@
     padding: 10px 0;
 }
 
-button:active, button:focus {
+.button-reset {
+    border: 1px solid whitesmoke;
+    background: orange;
+    width: 280px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+button:focus {
     outline: none;
+}
+
+button:active {
     transform: scale(1.1);
+}
+
+.button-reset:active {
+    transform: scale(1.03);
 }
